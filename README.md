@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Application web de gestion et d’édition de documents
 
-## Getting Started
+Cette application web est une plateforme moderne de gestion et d’édition collaborative de documents, fortement inspirée de Notion.
+Elle permet aux utilisateurs de créer, modifier et partager des documents en temps réel au sein d’une interface fluide, épurée et hautement interactive.
 
-First, run the development server:
+Conçue avec une architecture full-stack moderne, l’application repose sur Next.js, React, Prisma et PostgreSQL, offrant à la fois performance, fiabilité et évolutivité.
+Chaque utilisateur dispose d’un espace de travail sécurisé, accessible après authentification via Clerk, où il peut gérer ses documents, les organiser et restaurer les fichiers supprimés grâce à un système de corbeille intégré.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+L’interface utilisateur a été développée avec Tailwind CSS et shadcn/ui, garantissant un design cohérent, minimaliste et responsive, adapté à tous les formats d’écran.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies utilisées
+- **Next.js** – Framework React côté serveur pour des performances optimales.  
+- **React** – Construction d’interfaces utilisateur dynamiques et réactives.  
+- **Tailwind CSS** – Stylisation rapide et design moderne.  
+- **Prisma ORM** – Gestion des données et du schéma de base de données.  
+- **PostgreSQL** – Base de données relationnelle performante et scalable.  
+- **Clerk** – Authentification et gestion des utilisateurs.  
+- **TypeScript** – Typage statique pour un code plus fiable et maintenable.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Fonctionnalités principales
+- Création et édition de documents avec une interface riche et intuitive.  
+- Collaboration en temps réel entre plusieurs utilisateurs.  
+- Authentification et gestion des comptes utilisateurs avec Clerk.  
+- Organisation hiérarchique des fichiers (dossiers, sous-dossiers, corbeille).  
+- Système de corbeille avec récupération de documents supprimés.  
+- Publication en ligne et partage via des liens publics.  
+- Persistance des données dans PostgreSQL via Prisma.  
+- Interface adaptative (responsive design) compatible mobile et bureau.  
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Architecture du projet
+- **Front-end :** Next.js + React + Tailwind CSS  
+- **Back-end :** API Next.js (routes `app/api`) avec Prisma  
+- **Base de données :** PostgreSQL (hébergée sur Supabase)  
+- **Authentification :** Clerk  
